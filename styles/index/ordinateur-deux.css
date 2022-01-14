@@ -1,0 +1,51 @@
+/*SECTION EQUIPE*/
+
+.jeu-portrait-ordi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.jeu-portrait-2-ordi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.jeu-portrait-3-ordi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.jeu-portrait-4-ordi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.jeu-p-1-ordi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    color: #FFD700;
+}
+.jeu-p-2-ordi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    color: #FFD700;
+}
+.jeu-p-3-ordi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    color: #FFD700;
+}
+.jeu-p-4-ordi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    color: #FFD700;
+}

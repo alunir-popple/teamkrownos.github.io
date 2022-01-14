@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Name Smile";
+}
+
+@font-face {
+    font-family: "Name Smile";
+    src: url("../Oswald-VariableFont_wght.ttf");
+}
+
+/*HEADER*/
+
+header{
+    background-color:rgba(00,00,00,0.4);
+    height: 30px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+header *{
+    z-index:1;
+    text-decoration:none;
+}
+
+.text{
+    color: white;
+    margin: 21px;
+    transition: color 1s;
+    -webkit-transition: color 1s;
+    font-size: 16px;
+}
+
+.text:hover {
+    color: #FFD700;
+}
+
+/*MAIN*/
+
+hr{
+    margin-top:5%;
+    margin-left: 25%;
+    width:50%;
+    color: black;
+}
+
+#central{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#central img{
+    margin-top: 10px;
+    height: 200px;
+    width: 310px;
+}
+
+.central-p-2{
+    font-size: 15px;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.a-bleu{
+    color: #09C7D9;
+    cursor: pointer;
+}
+
+#image-actus{
+    height:110px;
+    width:180px;
+    border-style:solid;
+    border-color: black;
+    margin-left: 26%;
+    margin-top:8%;
+}
+
+#actus_bas p{
+    font-size:10px;
+    text-align: center;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.a-actu{
+    display:none;
+}
+
+main > section{
+    opacity: 1;
+    transition: 2s;
+    transform: translateX(0);
+}
+
+.hidden{
+    opacity:0;
+    transform: translateX(-50px);
+}
+
+/*FOOTER-MOBILE*/
+
+footer{
+    background-color: black;
+    color:white;
+    width:100%;
+    position: absolute;
+    top: 240%;
+}
+
+#reseaux{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-final-footer{
+    margin: 5px 38%;
+    height: 100px;
+    width: 90px;
+}
+
+.logo-reseau{
+    height:50px;
+    width:50px;
+    margin: 0 10px;
+}
+
+.langue-img{
+    margin: 10px 3px;
+    width:10%;
+    height:10%;
+}
+
+#langue{
+    display: flex;
+    justify-content: center;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+}
+
+#termes{
+    margin-top: 5px;
+    text-align: center;
+}
+
+#newsletter{
+    margin-left: 5px;
+}
+

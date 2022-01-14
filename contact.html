@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact/Recrutement</title>
+    <link rel="stylesheet" href="styles/contact/contact-mobile.css">
+    <link rel="stylesheet" href="styles/contact/contact-tablette.css" media="screen and (min-width:680px)">
+    <link rel="stylesheet" href="styles/contact/contact-pc.css" media=" screen and (min-width:1200px)">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <a class="text" href="index.html">Accueil</a>
+            <a class="text" href="actus.html">Actus</a>
+            <a class="text" href="shop.html">Shop</a>
+            <a class="text" href="contact.html">Contact/Recrutement</a>
+        </div>
+    </header>
+
+    <main>
+        <p id="prerecrutement">Recrutement :</p>
+        <div id="recrutement">
+
+            <form method="post">
+
+                <select id="genre">
+                    <option name="M">M.</option>
+                    <option name="Mme">Mme.</option>
+                </select>
+                <p>Nom :</p><input type="text" name="nom1"><br>
+                <p>Prénom :</p><input type="text" name="prenom1"><br>
+                <p>Adresse mail :</p><input type="text" name="mail1"><br>
+                <p>Téléphone :</p><input type="text" name="tel"><br>
+                <p>Jeu joué :</p><select id="jeu">
+                                    <option name="RL">Rocket League</option>
+                                    <option name="LOL">League of Legends</option>
+                                    <option name="fifa">FIFA</option>
+                                    <option name="CS">CS:GO</option>
+                                </select><br>
+                <p>Expérience :</p><input type="text" name="exp"><br>
+                <p>Classement :</p><input type="text" name="rank"><br>
+                <p>Détails :</p><textarea rows=5 cols=30 placeholder="Ajoutez des détails si nécessaires"></textarea><br>
+                <input type="button" name="ok" value="Envoyer" class="bouton1">
+            </form>
+            <div class="resultat_recrutement"></div>
+        </div>
+
+        <hr>
+        
+        <p id="precontact">Contact :</p>
+        <div id="contact">
+
+            <form method="post">
+                <p>Nom :</p><input type="text" name="nom"><br>
+                <p>Prénom :</p><input type="text" name="prenom"><br>
+                <p>Adresse mail :</p><input type="text" name="mail"><br>
+                <p>Comment pouvons-nous vous aider ?</p><textarea name="details" rows="5" cols="30" placeholder="Écrivez ici"></textarea><br>
+                <input type="button" name="ok" value="Envoyer" class="bouton2">
+            </form>
+            <div class="resultat_contact"></div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="newsletter"> 
+            <p class="titre-footer">Inscrivez-vous à notre newsletter</p>
+            <form method="post">
+                <p>Adresse mail :</p><input class="form-input-1" type="text" name="mail" placeholder="votre adresse mail"><br>
+                <p>En vous abonnant à notre newsletter vous acceptez notre politique de protection des donnees</p>
+                <input class="form-input-2" type="button" name="ok" value="s'inscrire" class="bouton">
+            </form>
+        </div>
+        <img class="logo-final-footer" src="images/Contour blanc.png">
+        <div id="reseaux">
+            <img class="logo-reseau" src="images/logo-insta-blanc.png">
+            <img class="logo-reseau" src="images/logo-twitter-blanc.png">
+        </div>
+        <div id="langue"> <img class="langue-img" src="images/france.png" href="actus.html">  <img class="langue-img" src="images/united-kingdom.png" href="actus-anglais.html"> </div>
+        <div id="termes"> 
+            <p>Mentions légales</p>
+            <p>CGU</p>
+            <p>Protection des données personnelles</p> </div>
+    </footer>
+    <script src="script/contact.js"></script>
+</body>
+</html>

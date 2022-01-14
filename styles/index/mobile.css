@@ -1,0 +1,515 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Name Smile";
+}
+
+@font-face {
+    font-family: "Name Smile";
+    src: url("../Oswald-VariableFont_wght.ttf");
+}
+
+/*HEADER-MOBILE*/
+
+header{
+    background-color:rgba(00,00,00,0.4);
+    height: 30px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+header *{
+    z-index:1;
+    text-decoration:none;
+}
+
+.text{
+    color: white;
+    margin: 21px;
+    transition: color 1s;
+    -webkit-transition: color 1s;
+    font-size: 16px;
+}
+
+.text:hover {
+    color: #FFD700;
+}
+
+/*VIDEO*/
+
+.video1{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    z-index:-3;
+}
+
+.video1 video{
+    width: 100%;
+}
+
+/*BANNIERE*/
+
+.marquee{
+    background-color:rgba(00,00,00,0.4);
+    height: 7vw;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-content {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    /*animation*/
+    animation: scrolling 10s linear infinite;
+}
+
+.marquee:before, .marquee:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+}
+
+.marquee:before {
+    left: 0;
+    background: linear-gradient(to right, black 0%, transparent 30%);
+}
+
+.marquee:after {
+    right: 0;
+    background: linear-gradient(to left, black 0%, transparent 30%);
+}
+
+@keyframes scrolling {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.marquee-content:hover{
+    animation-play-state: paused;
+}
+
+.marquee-content li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    flex-shrink: 0;
+    color: white;
+}
+
+.img-ban{
+    height: 2vw;
+    width: 5vw;
+}
+
+.img-ban-1{
+    height: 3vw;
+    width: 5vw;
+}
+
+.img-ban-2{
+    height: 4vw;
+    width: 7vw;
+}
+
+.img-ban-3{
+    height: 3vw;
+    width: 6vw;
+}
+
+/*SECTION VIDE*/
+
+.vide{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height: 130px;
+    width: 100%;
+    background-color:rgba(00,00,00,0.4);
+}
+
+.logo-vide{
+    /*height:1020px;
+    width:920px;*/
+    opacity:0;
+    height:120px;
+    width:100px;
+    /*animation*/
+    animation: logoanim 5s linear;
+}
+
+@keyframes logoanim {
+    0%{
+        opacity:0.2;
+    }
+    25%{
+        opacity:0.5;
+    }
+    50%{
+        opacity:1;
+    }
+    60%{
+        opacity:1;
+    }
+    75%{
+        opacity:0.5;
+    }
+    100%{
+        opacity:0.2;
+    }
+}
+
+/*SECTION ACTUS*/
+
+.actus-ordi{
+    display: none;
+}
+
+.actus{
+    height: 812px;
+    width: 100%;
+    background-color: white;
+}
+
+h1{
+    width: 100%;
+    background-color: #0A39FC;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    border-top-style: solid;
+    border-top-color: #FFD700;
+}
+
+#image-actus{
+    height: 130px;
+    width: 180px;
+    border-style: solid;
+    border-color: black;
+    margin-top:10px;
+    margin-bottom:10px;
+    cursor: pointer;
+}
+
+.gauche{
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    text-align: center;
+}
+
+.gauche p{
+    font-size: 15px;
+}
+
+.droite p{
+    font-size: 15px;
+}
+
+.droite{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    text-align: center;
+}
+
+.fin-actus{
+    position: absolute;
+    top: 120%;
+    left: 32%;
+}
+
+.actus p a {
+    text-decoration:none;
+    color: #09C7D9;
+}
+
+/*SECTION EQUIPE*/
+
+.equipe{
+    height: 812px;
+    width: 100%;
+    background-color: white;
+}
+
+.jeux{
+    z-index: -4;
+}
+
+#jeux-content{
+    margin: 4px;
+    list-style: none;
+}
+
+.img-jeux-1{
+    margin-top: 6%;
+    margin-left: 5%;
+    height: 160px;
+    width: 90%;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 1;
+    transition: 2s;
+}
+.img-jeux-2{
+    margin-top: 6%;
+    margin-left: 5%;
+    height: 160px;
+    width: 90%;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 1;
+    transition: 2s;
+}
+.img-jeux-3{
+    margin-top: 6%;
+    margin-left: 5%;
+    height: 160px;
+    width: 90%;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 1;
+    transition: 2s;
+}
+.img-jeux-4{
+    margin-top: 6%;
+    margin-left: 5%;
+    height: 160px;
+    width: 90%;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 1;
+    transition: 2s;
+}
+
+.img-carre-jeux-1{
+    display:none;
+}
+.img-carre-jeux-2{
+    display:none;
+}
+.img-carre-jeux-3{
+    display:none;
+}
+.img-carre-jeux-4{
+    display:none;
+}
+
+/*ANIMATION EQUIPE CSGO ...*/
+
+#jeu-equipe{
+    height: 150px;
+    width: 100%;
+    background: radial-gradient(white 20%, #FFD700 80%);
+}
+
+#jeu-equipe-2{
+    height: 150px;
+    width: 100%;
+    background: radial-gradient(white 20%, #FFD700 80%);
+}
+
+#jeu-equipe-3{
+    height: 150px;
+    width: 100%;
+    background: radial-gradient(white 20%, #FFD700 80%);
+}
+
+#jeu-equipe-4{
+    height: 150px;
+    width: 100%;
+    background: radial-gradient(white 20%, #FFD700 80%);
+}
+
+.jeu-portrait{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.jeu-portrait-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.jeu-portrait-3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.jeu-portrait-4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.portrait img{
+    height: 100px;
+    width: 90px;
+    margin: 10px;
+    border-style: solid;
+    border-color: #FFD700;
+}
+
+.jeu-p-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 8px;
+    color: black;
+}
+.jeu-p-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 8px;
+    color: black;
+}
+.jeu-p-3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 8px;
+    color: black;
+}
+.jeu-p-4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 8px;
+    color: black;
+}
+
+/*FOOTER-MOBILE*/
+
+footer{
+    background-color: black;
+    color:white;
+    width:100%;
+    position: absolute;
+    top: 240%;
+}
+
+#reseaux{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-final-footer{
+    margin: 5px 38%;
+    height: 100px;
+    width: 90px;
+}
+
+.logo-reseau{
+    height:50px;
+    width:50px;
+    margin: 0 10px;
+}
+
+.langue-img{
+    margin: 10px 3px;
+    width:10%;
+    height:10%;
+}
+
+#langue{
+    display: flex;
+    justify-content: center;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+}
+
+#termes{
+    margin-top: 5px;
+    text-align: center;
+}
+
+#newsletter{
+    margin-left: 5px;
+}
+
+/*CLASSE ANIMATION*/
+
+.hidden{
+    opacity: 0;
+}
+
+.team{
+    display:none;
+}
+
+/*ANIMATION EQUIPE ORDI*/
+
+.img-carre-jeux-1{
+    display:none;
+}
+.img-carre-jeux-2{
+    display:none;
+}
+.img-carre-jeux-3{
+    display:none;
+}
+.img-carre-jeux-4{
+    display:none;
+}
+
+.portrait-ordi img{
+    display:none;
+}
+
+.jeu-portrait-ordi{
+    display:none;
+}
+.jeu-portrait-2-ordi{
+    display:none;
+}
+.jeu-portrait-3-ordi{
+    display:none;
+}
+.jeu-portrait-4-ordi{
+    display:none;
+}
+
+.jeu-p-1-ordi{
+    display:none;
+}
+.jeu-p-2-ordi{
+    display:none;
+}
+.jeu-p-3-ordi{
+    display:none;
+}
+.jeu-p-4-ordi{
+    display:none;
+}
+
+#jeu-equipe-ordi{
+    display:none;
+}
+#jeu-equipe-2-ordi{
+    display:none;
+}
+#jeu-equipe-3-ordi{
+    display:none;
+}
+#jeu-equipe-4-ordi{
+    display:none;
+}
+
+.portrait-ordi p{
+    display:none;
+}

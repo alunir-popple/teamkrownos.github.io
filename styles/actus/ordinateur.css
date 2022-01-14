@@ -1,0 +1,62 @@
+/*HEADER-ORDINATEUR*/
+
+.text{
+    margin: 113px;
+}
+
+/*MAIN*/
+
+#central img{
+    height: 400px;
+    width: 600px;
+}
+
+#image-actus{
+    height:350px;
+    width:500px;
+    margin-left: 32.5%;
+    margin-top:3%;
+}
+
+#actus_bas p{
+    font-size:18px;
+}
+
+#actus4{
+    display:none;
+}
+#actus5{
+    display:none;
+}
+#actus6{
+    display:none;
+}
+#actus7{
+    display:none;
+}
+
+.a-actu{
+    display:block;
+    position:absolute;
+    top:236%;
+    right:1%;
+    font-size:25px;
+    color: #09C7D9;
+    text-decoration: none;
+}
+
+/*FOOTER-ORDI*/
+
+.form-input-1{
+    position: absolute;
+    left: 45.3%;
+}
+
+.form-input-2{
+    position: absolute;
+    left: 48%;
+}
+
+#termes{
+    margin-top: 105px;
+}

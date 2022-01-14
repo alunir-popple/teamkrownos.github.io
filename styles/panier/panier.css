@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Name Smile";
+    src: url("../Oswald-VariableFont_wght.ttf");
+}
+
+div{
+    position:absolute;
+    top:40%;
+    left:40%;
+    font-size:30pt;
+}
+
+div p{
+    display:flex;
+    flex-wrap:wrap;
+}
+div a{
+    text-decoration:none;
+    display:flex;
+    flex-wrap:wrap;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="styles/shop/shop-mobile.css">
+    <link rel="stylesheet" href="styles/shop/shop-tablette.css" media="screen and (min-width:680px)">
+    <link rel="stylesheet" href="styles/shop/shop-pc.css" media="screen and (min-width:1200px)">
+</head>
+<body>
+<p id="tip-top"> Bienvenue sur notre boutique </p>
+    <header>
+        <div class="top-header">
+            <a class="text" href="index.html">Accueil</a>
+            <a class="text" href="actus.html">Actus</a>
+            <a class="text" href="shop.html">Shop</a>
+            <a class="text" href="contact.html">Contact/Recrutement</a>
+            <img src="produits/panier.png" onclick="panier()">
+        </div>
+        <div id="panier" class="remove">
+            <p class="nombre"></p>
+        </div>
+    </header>
+
+<p id="titre"> Nos produits :</p>
+    
+<div id="allproduits">
+
+    <div class="produits" id="produit1">
+        <img src="produits/maillot_dom_front.png">
+        <p id="description">Maillot</p>
+    </div>
+
+    <div id="couverture" class="remove">
+    </div>
+        <div id="lightbox1" class="remove">
+            <div id="images">
+                <div id="vignettes1">
+                    <img id="vignette1" src="produits/maillot_dom_front.png">
+                    <img id="vignette2" src="produits/maillot_dom_back.png">
+                </div>
+                <div id="grande">
+                    <img src="produits/maillot_dom_front.png">
+                </div>
+            </div>
+            <div id="info">
+                <form method="post">
+                    <select id="maillot">
+                        <option id="dom" selected="selected">Maillot domicile</option>
+                        <option id="ext">Maillot extérieur</option>
+                    </select><br>
+                    <p>Taille :</p>
+                    <select id="taille">
+                        <option id="S">S</option>
+                        <option id="M">M</option>
+                        <option id="L">L</option>
+                        <option id="XL">XL</option>
+                    </select>
+                </form>
+                <p id="prix">Prix : 59.99€</p>
+                <p id="add_panier" onclick="compte()">Ajouter au panier</p>
+            </div>
+        </div>
+
+    <div class="produits" id="produit2">
+        <img src="produits/casquette.png">
+        <p id="description"> Casquette </p>
+    </div>
+    <div id="lightbox2" class="remove">
+        <div id="images">
+            <div id="grande">
+                <img src="produits/casquette.png">
+            </div>
+        </div>
+        <div id="info">
+                <p>Casquette</p>
+                <p>Taille universelle</p>
+            <p id="prix">Prix : 29.99€</p>
+            <p id="add_panier" onclick="compte()">Ajouter au panier</p>
+        </div>
+    </div>
+    <div class="produits" id="produit3">
+        <img src="produits/gourde.png">
+        <p id="description"> Gourde </p>
+    </div>
+    <div id="lightbox3" class="remove">
+        <div id="images">
+            <div id="grande">
+                <img src="produits/gourde.png">
+            </div>
+        </div>
+        <div id="info">
+            <p>Gourde 0.5L</p>
+            <p id="prix">Prix : 29.99€</p>
+            <p id="add_panier" onclick="compte()">Ajouter au panier</p>
+        </div>
+    </div>
+    <div class="produits" id="produit4">
+        <img src="produits/Hoodie special edition.png">
+        <p id="description"> Hoodie spécial édition </p>
+    </div>
+    <div id="lightbox4" class="remove">
+        <div id="images2">
+            <div id="grande">
+                <img src="produits/Hoodie special edition.png">
+            </div>
+        </div>
+        <div id="info">
+            <p>Hoodie spécial édition</p>
+            <form>
+                <p>Taille :</p>
+                <select id="taille">
+                    <option id="S">S</option>
+                    <option id="M">M</option>
+                    <option id="L">L</option>
+                    <option id="XL">XL</option>
+                </select>
+            </form>
+            <p id="prix">Prix : 29.99€</p>
+            <p id="add_panier" onclick="compte()">Ajouter au panier</p>
+        </div>
+    </div>
+    <div class="produits" id="produit5">
+        <img src="produits/Flag classique.png">
+        <p id="description"> Drapeau Ultra </p>
+    </div>
+    <div id="lightbox5" class="remove">
+        <div id="images">
+            <div id="grande">
+                <img src="produits/Flag classique.png">
+            </div>
+        </div>
+        <div id="info">
+            <p>Drapeau Ultra</p>
+            <p id="prix">Prix : 9.99€</p>
+            <p id="add_panier" onclick="compte()">Ajouter au panier</p>
+        </div>
+    </div>
+    <div class="produits" id="produit6">
+        <img src="produits/Bracelets.png">
+        <p id="description"> Bracelets </p>
+    </div>
+    <div id="lightbox6" class="remove">
+        <div id="images">
+            <div id="grande">
+                <img src="produits/Bracelets.png">
+            </div>
+        </div>
+        <div id="info">
+           <p>Bracelets</p>
+            <p id="prix">Prix : 9.99€</p>
+            <p id="add_panier" onclick="compte()">Ajouter au panier</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <div id="newsletter"> 
+        <p class="titre-footer">Inscrivez-vous à notre newsletter</p>
+        <form method="post">
+            <p>Adresse mail :</p><input class="form-input-1" type="text" name="mail" placeholder="votre adresse mail"><br>
+            <p>En vous abonnant à notre newsletter vous acceptez notre politique de protection des donnees</p>
+            <input class="form-input-2" type="button" name="ok" value="s'inscrire" class="bouton">
+        </form>
+    </div>
+    <img class="logo-final-footer" src="images/Contour blanc.png">
+    <div id="reseaux">
+        <img class="logo-reseau" src="images/logo-insta-blanc.png">
+        <img class="logo-reseau" src="images/logo-twitter-blanc.png">
+    </div>
+    <div id="langue"> <img class="langue-img" src="images/france.png" href="actus.html">  <img class="langue-img" src="images/united-kingdom.png" href="actus-anglais.html"> </div>
+    <div id="termes"> 
+        <p>Mentions légales</p>
+        <p>CGU</p>
+        <p>Protection des données personnelles</p> </div>
+</footer>
+
+<script src="script/shop.js"></script>
+</body>
+</html>

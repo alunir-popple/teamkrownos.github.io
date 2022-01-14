@@ -1,0 +1,345 @@
+/*HEADER-ORDINATEUR*/
+
+.text{
+    font-size: 40px;
+    margin: 110px;
+}
+
+/*BANNIERE*/
+
+.marquee:before {
+    left: 0;
+    background: linear-gradient(to right, black 0%, transparent 100%);
+}
+
+.marquee:after {
+    right: 0;
+    background: linear-gradient(to left, black 0%, transparent 100%);
+}
+
+/*SECTION VIDE*/
+
+.vide{
+    height: 400px;
+    width: 100%;
+    background-color:rgba(00,00,00,0.4);
+}
+
+.logo-vide{
+    /*height:1020px;
+    width:920px;*/
+    opacity:0;
+    height:320px;
+    width:300px;
+}
+
+/*SECTION ACTUS*/
+
+#slider-img:hover{
+    cursor: pointer;
+    animation: imageactu 1.5s linear infinite;
+}
+
+@keyframes imageactu {
+    0%{
+        opacity:0;
+    }
+    25%{
+        opacity:0.5;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.actus-ordi{
+    display: block;
+    background-color: white;
+    height: 812px;
+    width: 100%;
+}
+
+.slider-container{
+    margin: 0 auto;
+    padding: 50px;
+    max-width: 800px;
+}
+
+.slider img{
+    max-width:100%;
+    display:none;
+}
+img.active{
+    display:block;
+    animation: fade 0.8s;
+}
+
+.slider-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-p p{
+    max-width:100%;
+    display:none;
+    font-size: 20px;
+}
+p.activee{
+    display:block;
+    animation: fade 0.8s;
+}
+
+@keyframes fade {
+    from{
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.slider-bouton{
+    width:100%;
+    height:auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.bouton-nav{
+    font-size: 50px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.actus{
+    display:none;
+}
+
+.fin-actus{
+    position: absolute;
+    top: 147%;
+    left: 43%;
+    z-index: 4;
+}
+.fin-actus a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #09C7D9;
+}
+
+/*SECTION EQUIPE*/
+
+.img-carre-jeux-1{
+    height:300px;
+    width:300px;
+    border-radius: 8px;
+    display: block;
+    position: absolute;
+    top: 160%;
+    left: 730px;
+}
+.img-carre-jeux-2{
+    height:200px;
+    width:330px;
+    border-radius: 8px;
+    display: block;
+    position: absolute;
+    top: 170.5%;
+    left: 390px;
+}
+.img-carre-jeux-3{
+    height:300px;
+    width:300px;
+    border-radius: 8px;
+    display: block;
+    position: absolute;
+    top: 195%;
+    left: 420px;
+}
+.img-carre-jeux-4{
+    height:300px;
+    width:300px;
+    display: block;
+    position: absolute;
+    top: 195%;
+    left: 730px;
+}
+
+.portrait-ordi img{
+    height: 150px;
+    width: 140px;
+    margin: 10px;
+    display: block;
+    border-style: solid;
+    border-color: #FFD700;
+}
+
+.jeu-portrait-ordi{
+    display: block;
+    position:absolute;
+    top: 205%;
+    left: 60%;
+}
+.jeu-portrait-2-ordi{
+    display: block;
+    position:absolute;
+    top: 29%;
+    left: 12%;
+}
+.jeu-portrait-3-ordi{
+    display: block;
+    position:absolute;
+    top: 60%;
+    left: 2.2%;
+}
+.jeu-portrait-4-ordi{
+    display: block;
+    position:absolute;
+    top: -129%;
+    left: 61%;
+}
+
+.jeu-p-1-ordi{
+    display: block;
+    position:absolute;
+    top: 300%;
+    left: 64%;
+    font-size: 50px;
+}
+.jeu-p-2-ordi{
+    display: block;
+    position:absolute;
+    top: 124%;
+    left: 12%;
+    font-size: 50px;
+}
+.jeu-p-3-ordi{
+    display: block;
+    position:absolute;
+    top: 152%;
+    left:3%;
+    font-size: 50px;
+}
+.jeu-p-4-ordi{
+    display: block;
+    position:absolute;
+    top: -35%;
+    left: 64%;
+    font-size: 50px;
+}
+
+#jeu-equipe-ordi{
+    height: 150px;
+    width: 100%;
+    background: none;
+    display: block;
+    position: absolute;
+    top: 135%;
+    left: 2%;
+}
+#jeu-equipe-2-ordi{
+    height: 150px;
+    width: 100%;
+    background: none;
+    display: block;
+    position: absolute;
+    top: 165%;
+    left: 2%;
+}
+#jeu-equipe-3-ordi{
+    height: 150px;
+    width: 100%;
+    background: none;
+    display: block;
+    position: absolute;
+    top: 195%;
+    left: 2%;
+}
+#jeu-equipe-4-ordi{
+    height: 150px;
+    width: 100%;
+    background: none;
+    display: block;
+    position: absolute;
+    top: 225%;
+    left:1%;
+}
+
+.portrait-ordi p{
+    display: block;
+    margin: 35px;
+}
+
+/*FOOTER-ORDI*/
+
+.form-input-1{
+    position: absolute;
+    left: 45.3%;
+}
+
+.form-input-2{
+    position: absolute;
+    left: 48%;
+}
+
+#termes{
+    margin-top: 105px;
+}
+
+
+/*ANIMATION EQUIPE TABLETTE-NONE*/
+
+.jeu-portrait{
+    display:none;
+}
+.jeu-portrait-2{
+    display:none;
+}
+.jeu-portrait-3{
+    display:none;
+}
+.jeu-portrait-4{
+    display:none;
+}
+
+.portrait img{
+    display:none;
+}
+
+.jeu-p-1{
+    display:none;
+}
+.jeu-p-2{
+    display:none;
+}
+.jeu-p-3{
+    display:none;
+}
+.jeu-p-4{
+    display:none;
+}
+
+.portrait p{
+    display:none;
+}
+
+#jeu-equipe{
+    display:none;
+}
+#jeu-equipe-2{
+    display:none;
+}
+#jeu-equipe-3{
+    display:none;
+}
+#jeu-equipe-4{
+    display:none;
+}

@@ -1,0 +1,38 @@
+/* HEADER */
+header *{
+    height: 70px;
+}
+
+.text{
+    font-size: 20pt;
+}
+
+/* MAIN */
+
+#prerecrutement{
+    margin-top:50px;
+    margin-left:200px;
+    font-size:30pt;
+}
+
+#precontact{
+    margin-top:50px;
+    margin-left:200px;
+    font-size:30pt;
+}
+
+/*FOOTER-ORDI*/
+
+.form-input-1{
+    position: absolute;
+    left: 45.3%;
+}
+
+.form-input-2{
+    position: absolute;
+    left: 48%;
+}
+
+#termes{
+    margin-top: 105px;
+}

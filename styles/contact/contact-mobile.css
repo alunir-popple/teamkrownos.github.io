@@ -1,0 +1,126 @@
+/* HEADER */
+
+@font-face {
+    font-family: "Oswald";
+    src: url("../Oswald-VariableFont_wght.ttf");
+}
+
+body{
+    margin:0;
+}
+
+header *{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    text-decoration:none;
+    background-color:black;
+    height: 30px;
+    z-index:1;
+    text-decoration:none;
+}
+
+p{
+    font-family: "Oswald";
+}
+a{
+    font-family:"Oswald";
+}
+
+.text{
+    color: white;
+    margin: 15px;
+    transition: color 1s;
+    -webkit-transition: color 1s;
+    font-size: 12pt;
+}
+
+.text:hover {
+    color: #FFD700;
+}
+
+
+/* MAIN */
+
+#prerecrutement{
+    margin-top:30px;
+    margin-left:20px;
+    font-size:20pt;
+}
+
+#recrutement{
+    text-align:center;
+    margin-bottom:100px;
+}
+
+hr{
+    width:30%;
+    text-align:center;
+}
+
+#precontact{
+    margin-top:30px;
+    margin-left:20px;
+    font-size:20pt;
+}
+
+#contact{
+    text-align:center;
+}
+
+.bouton1{
+    margin-top:20px;
+}
+
+.bouton2{
+    margin-top:20px;
+}
+
+/*FOOTER-MOBILE*/
+
+footer{
+    background-color: black;
+    color:white;
+    width:100%;
+    position: absolute;
+    top: 240%;
+}
+
+#reseaux{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-final-footer{
+    margin: 5px 38%;
+    height: 100px;
+    width: 90px;
+}
+
+.logo-reseau{
+    height:50px;
+    width:50px;
+    margin: 0 10px;
+}
+
+.langue-img{
+    margin: 10px 3px;
+    width:10%;
+    height:10%;
+}
+
+#langue{
+    display: flex;
+    justify-content: center;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+}
+
+#termes{
+    margin-top: 5px;
+    text-align: center;
+}
+
+#newsletter{
+    margin-left: 5px;
+}

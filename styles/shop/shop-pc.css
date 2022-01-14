@@ -1,0 +1,173 @@
+/*HEADER-ORDINATEUR*/
+.top-header img{
+    height:70%;
+}
+
+header *{
+    height:70px;
+}
+
+.text{
+    margin: 113px;
+    font-size:20pt;
+}
+
+#titre{
+    font-size:40pt;
+    margin-left:50px;
+}
+
+#panier{
+    border-radius:20px;
+    top:8%;
+    right:2%;
+    width:35px;
+    height:35px;
+}
+.nombre{
+    font-size:17pt;
+}
+
+
+/* MAIN */
+
+#lightbox1{
+    width:700px;
+    height:700px;
+    top:10%;
+    left:25%;
+    bottom:10%;
+    right:25%;
+}
+
+#lightbox2{
+    width:700px;
+    height:700px;
+    top:10%;
+    left:25%;
+    bottom:10%;
+    right:25%;
+}
+#lightbox3{
+    width:700px;
+    height:700px;
+    top:10%;
+    left:25%;
+    bottom:10%;
+    right:25%;
+}
+
+#lightbox3 img{
+    width:100%;
+    height:100%;  
+}
+#lightbox4{
+    width:700px;
+    height:700px;
+    top:10%;
+    left:25%;
+    bottom:10%;
+    right:25%;
+}
+#lightbox5{
+    width:700px;
+    height:700px;
+    top:10%;
+    left:25%;
+    bottom:10%;
+    right:25%;
+}
+#lightbox5 *{
+    transform:translateY(-100px);
+}
+
+#lightbox5 img{
+    transform:translateY(100px);
+}
+
+#lightbox6{
+    width:700px;
+    height:700px;
+    top:10%;
+    left:25%;
+    bottom:10%;
+    right:25%;
+}
+
+#lightbox6 p{
+    margin-top:0px;
+}
+
+#vignettes1 img{
+    height:80%;    
+}
+
+.produits{
+    height:600px;
+    width:400px;
+}
+
+#produit4 p{
+    margin-top:100px;
+    margin-bottom:20px;
+}
+
+#produit1 img{
+    width:130%;
+}
+#produit2  img{
+    margin-left:30px;
+    width:160%;
+    height:80%;
+}
+#produit3  img{
+    width:100%;
+}
+#produit4  img{
+    height:60%;
+}
+#produit5  img{
+    height:80%;
+}
+#produit6  img{
+    height:80%;
+}
+
+#allproduits{
+    display:grid;
+    grid-template-areas: "un deux trois", "quatre cinq six";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:25px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#description{
+    font-size:13pt;
+}
+
+#add_panier{
+    margin-left:200px;
+    margin-right:200px;
+}
+
+#info{
+    font-size:13pt;
+}
+
+/*FOOTER-ORDI*/
+
+.form-input-1{
+    position: absolute;
+    left: 45.3%;
+}
+
+.form-input-2{
+    position: absolute;
+    left: 48%;
+}
+
+#termes{
+    margin-top: 105px;
+}
